@@ -43,7 +43,7 @@ initial() {
 	fi
 }
 
-#opens a file with 'ntitle' name in 'vim' tool
+#opens a file with 'ntitle' name in 'vim'
 new() {
 	echo -n "- enter note title name : "
 	read ntitle
@@ -63,7 +63,7 @@ open() {
 	back
 }
 
-#runs 'rm' command on 'ntitle' file if exists
+#deletes 'ntitle' note
 delete() {
 	echo -n "- enter note title name : "
 	read ntitle
@@ -76,11 +76,13 @@ delete() {
 	back
 }
 
+#returns a list of all the notes
 notes() {
 	ls $HOME/.fastnote/notes
 	back
 }
 
+#to rename a note
 rename() {
 	echo -n "- enter note title name : "
 	read ntitle
