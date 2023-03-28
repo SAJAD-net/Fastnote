@@ -7,6 +7,7 @@ back() {
 	read
 }
 
+#reload the shell
 _reload() {
      if [ "$shell"=="bin/bash" ]; then
          source $HOME/.bashrc
@@ -16,7 +17,7 @@ _reload() {
 }
 
 
-
+#display the help
 _help() {
 	echo -e "\nusage : bash fastnote.sh"
 	echo -e "args  :\n\t-i : install\n\t-h : displays this help\n"
