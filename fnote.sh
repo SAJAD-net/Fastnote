@@ -19,7 +19,7 @@ _reload() {
 
 #display the help
 _help() {
-	echo -e "\nusage : bash fastnote.sh"
+	echo -e "\nusage : bash fnote.sh"
 	echo -e "args  :\n\t-i : install\n\t-h : displays this help\n"
 	back	
 }
@@ -33,9 +33,9 @@ initial() {
 		mkdir $home/notes
 		cp fastnote.sh $home/
 		if [ "$SHELL" == "bin/bash" ];then 
-			echo -e "\nalias fnote=\"bash $home/fastnote.sh\"" >> $HOME/.bashrc
+			echo -e "\nalias fnote=\"bash $home/fnote.sh\"" >> $HOME/.bashrc
 		else
-			echo -e "\nalias fnote=\"bash $home/fastnote.sh\"" >> $HOME/.zshrc
+			echo -e "\nalias fnote=\"bash $home/fnote.sh\"" >> $HOME/.zshrc
 		fi
 		
 		echo "- fastnote initialized !"
@@ -135,7 +135,7 @@ fastnote() {
 			fi
 		done
 	else
-		echo "first install it : ./fastnote.sh -i"
+		echo "first install it : ./fnote.sh -i"
 	fi
 }
 
