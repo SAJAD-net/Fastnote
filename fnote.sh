@@ -23,7 +23,6 @@ _reload() {
 _help() {
 	echo -e "\nusage : bash fnote.sh"
 	echo -e "args  :\n\t-i : install\n\t-h : displays this help\n"
-	back
 }
 
 
@@ -149,6 +148,7 @@ fastnote() {
 			back
 		elif [ "$ope" == "8" ];then
 			_help
+			back
 		fi
 	done
 }
